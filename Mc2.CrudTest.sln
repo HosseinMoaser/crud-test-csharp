@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{A0477C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B550CE34-692B-440D-97E1-C1AB948C798B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Domain", "Mc2.CrudTest.Domain\Mc2.CrudTest.Domain.csproj", "{D4D70799-9A05-4C7B-AB04-6FA761A967F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Domain", "Mc2.CrudTest.Domain\Mc2.CrudTest.Domain.csproj", "{D4D70799-9A05-4C7B-AB04-6FA761A967F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B4641E46-0071-4882-A64D-3074459EDB08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Shared.Abstraction", "Mc2.CrudTest.Shared.Abstraction\Mc2.CrudTest.Shared.Abstraction.csproj", "{7FDDF8BA-7029-4C27-A01E-89C27A86CFDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mc2.CrudTest.Shared.Abstraction", "Mc2.CrudTest.Shared.Abstraction\Mc2.CrudTest.Shared.Abstraction.csproj", "{7FDDF8BA-7029-4C27-A01E-89C27A86CFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mc2.CrudTest.Application", "Mc2.CrudTest.Application\Mc2.CrudTest.Application.csproj", "{875CA0EC-DE53-4CF8-8977-D5C1823EF559}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,13 +35,19 @@ Global
 		{7FDDF8BA-7029-4C27-A01E-89C27A86CFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FDDF8BA-7029-4C27-A01E-89C27A86CFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FDDF8BA-7029-4C27-A01E-89C27A86CFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875CA0EC-DE53-4CF8-8977-D5C1823EF559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875CA0EC-DE53-4CF8-8977-D5C1823EF559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875CA0EC-DE53-4CF8-8977-D5C1823EF559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875CA0EC-DE53-4CF8-8977-D5C1823EF559}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{6776DF76-1054-486C-A79A-57100C47032F} = {B550CE34-692B-440D-97E1-C1AB948C798B}
 		{D4D70799-9A05-4C7B-AB04-6FA761A967F6} = {A0477C9A-5F9E-45DD-99F7-3C416272D273}
 		{7FDDF8BA-7029-4C27-A01E-89C27A86CFDE} = {B4641E46-0071-4882-A64D-3074459EDB08}
+		{875CA0EC-DE53-4CF8-8977-D5C1823EF559} = {A0477C9A-5F9E-45DD-99F7-3C416272D273}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B5A26C9-68C1-49D9-9F32-AF907A1730C2}
