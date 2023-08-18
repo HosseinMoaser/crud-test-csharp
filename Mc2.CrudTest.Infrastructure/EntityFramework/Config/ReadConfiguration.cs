@@ -13,7 +13,7 @@ internal sealed class ReadConfiguration : IEntityTypeConfiguration<CustomerReadM
         builder.Property(pl => pl.FirstName);
         builder.Property(pl => pl.LastName);
         builder.Property(pl => pl.DateofBirth);
-        builder.Property(pl => pl.PhoneNumber);
+        builder.Property(pl => pl.PhoneNumber).HasColumnType("varchar(20)");
         builder.Property(pl => pl.Email);
         builder.Property(pl => pl.BankAccountNumber);
     }
