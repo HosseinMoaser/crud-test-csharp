@@ -11,7 +11,7 @@ public class Customer : AggregateRoot<CustomerId>
     private CustomerDateOfBirth _dateofBirth;
     private CustomerPhoneNumber _phoneNumber;
     private CustomerEmail _email;
-    private CustomerBankAccountNumber _bankAcountNumber;
+    private CustomerBankAccountNumber _bankAccountNumber;
 
     public Customer()
     {
@@ -20,7 +20,7 @@ public class Customer : AggregateRoot<CustomerId>
 
     internal Customer(CustomerId id, CustomerFirstName firstName, CustomerLastName lastName, 
         CustomerDateOfBirth dateofBirth,  CustomerPhoneNumber phoneNumber, 
-        CustomerEmail email, CustomerBankAccountNumber bankAcountNumber)
+        CustomerEmail email, CustomerBankAccountNumber bankAccountNumber)
     {
          Id = id;
         _firstName = firstName;
@@ -28,6 +28,6 @@ public class Customer : AggregateRoot<CustomerId>
         _dateofBirth = dateofBirth;
         _phoneNumber = phoneNumber;
         _email = email;
-        _bankAcountNumber = bankAcountNumber;
+        _bankAccountNumber = bankAccountNumber;
     }
 }

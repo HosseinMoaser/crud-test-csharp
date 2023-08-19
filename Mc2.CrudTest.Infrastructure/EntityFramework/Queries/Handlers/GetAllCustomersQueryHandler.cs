@@ -18,8 +18,9 @@ public class GetAllCustomersQueryHandler : IQueryHandler<GetAllCustomersQuery, I
 
     public async Task<IEnumerable<CustomerDto>> HandleAsync(GetAllCustomersQuery query)
     {
-        return await _customers.Select(pl => pl.MapToDto())
+       var list = await _customers.Select(pl => pl.MapToDto())
             .AsNoTracking()
             .ToListAsync();
+        return list;
     }
 }

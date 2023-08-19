@@ -1,5 +1,6 @@
 ﻿using Mc2.CrudTest.Application.Services;
 using Mc2.CrudTest.Domain.Repositories;
+using Mc2.CrudTest.Infrastructure.EntityFramework.Commands;
 using Mc2.CrudTest.Infrastructure.EntityFramework.Contexts;
 using Mc2.CrudTest.Infrastructure.EntityFramework.Options;
 using Mc2.CrudTest.Infrastructure.EntityFramework.Repositories;
@@ -23,7 +24,7 @@ internal static class Extensions
         ctx.UseSqlServer(options.ConnectionString));
         services.AddDbContext<WriteDbContext>(ctx =>
             ctx.UseSqlServer(options.ConnectionString));
-
+        services.AddCommands();
         return services;
     }
 }

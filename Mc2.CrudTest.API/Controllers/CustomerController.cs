@@ -3,7 +3,6 @@ using Mc2.CrudTest.Application.DTOs;
 using Mc2.CrudTest.Application.Queries;
 using Mc2.CrudTest.Shared.Abstraction.Commands;
 using Mc2.CrudTest.Shared.Abstraction.Queries;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mc2.CrudTest.API.Controllers;
@@ -27,9 +26,9 @@ public class CustomerController : BaseController
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<CustomerDto>>> Get([FromQuery] GetAllCustomersQuery query)
+    public async Task<ActionResult<IEnumerable<CustomerDto>>> Get()
     {
-        var result = await _queryDispatcher.QueryAsync(query);
+        var result = await _queryDispatcher.QueryAsync(new GetAllCustomersQuery());
         return OkOrNotFound(result);
     }
 
@@ -40,7 +39,7 @@ public class CustomerController : BaseController
         return CreatedAtAction(nameof(Get), new { id = command.id }, null);
     }
 
-    [HttpPut("{id:guid}")]
+    [HttpPut]
     public async Task<IActionResult> Put([FromBody] UpdateCustomerCommand command)
     {
         await _commandDispatcher.DispatchAsync(command);

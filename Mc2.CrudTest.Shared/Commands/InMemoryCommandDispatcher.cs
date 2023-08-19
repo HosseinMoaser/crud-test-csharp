@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Mc2.CrudTest.Shared.Commands;
 
-internal sealed class InMemoryCommandDispatcher : ICommandDispatcher
+public sealed class InMemoryCommandDispatcher : ICommandDispatcher
 {
     private readonly IServiceProvider _serviceProvider;
 

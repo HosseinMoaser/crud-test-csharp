@@ -24,7 +24,7 @@ internal sealed class CustomerRepository : ICustomerRepository
 
     public Task<Customer> GetCustomerByIdAsync(CustomerId id)
     {
-        return  _customers.SingleOrDefaultAsync(pl => pl.Id == id);
+        return _customers.SingleOrDefaultAsync(pl => pl.Id == id);
     }
 
 
