@@ -18,7 +18,7 @@ public class Customer : AggregateRoot<CustomerId>
 
     }
 
-    internal Customer(CustomerId id, CustomerFirstName firstName, CustomerLastName lastName, 
+    public Customer(CustomerId id, CustomerFirstName firstName, CustomerLastName lastName, 
         CustomerDateOfBirth dateofBirth,  CustomerPhoneNumber phoneNumber, 
         CustomerEmail email, CustomerBankAccountNumber bankAccountNumber)
     {

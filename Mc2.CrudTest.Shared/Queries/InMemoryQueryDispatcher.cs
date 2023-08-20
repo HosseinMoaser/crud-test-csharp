@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Mc2.CrudTest.Shared.Queries;
 
-internal sealed class InMemoryQueryDispatcher : IQueryDispatcher
+public sealed class InMemoryQueryDispatcher : IQueryDispatcher
 {
     private readonly IServiceProvider _serviceProvider;
 

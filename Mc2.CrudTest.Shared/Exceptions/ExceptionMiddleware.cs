@@ -1,6 +1,5 @@
 ﻿using Mc2.CrudTest.Shared.Abstraction.Exceptions;
 using Microsoft.AspNetCore.Http;
-using System.Net.Http;
 using System.Text.Json;
 
 namespace Mc2.CrudTest.Shared.Exceptions;
